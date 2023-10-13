@@ -11,9 +11,9 @@
         <div class="tp-blue">
           <div class="sub-tp-blue">
             <img src="./pages img/dashboard/Ellipse.png" alt=""> 
-            <select name="tp-blue" id="">
-              <option value="">Epic Event</option>
-              <option value=""> <a href="./http://127.0.0.1:5500/Rk%20community/dashboard/rentalhistory.html"> Peter Abu </a></option>
+            <select name="tp-blue" id="Selector">
+              <option value="option1">Epic Event</option>
+              <option value="option2"> <a href="./http://127.0.0.1:5500/Rk%20community/dashboard/rentalhistory.html"> Peter Abu </a></option>
             </select>
           </div>
         </div>
@@ -49,7 +49,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="Container">
 
       <section class="sec-1">
         <p class="Overview-p">Overview</p>
@@ -94,18 +94,24 @@
       </section>
 
       <section class="sec-2">
-        <div class="sub-sec-2"><p class="Overview-p">Top Rental Goods</p> <button class="sec-2-btn">Add Product</button></div>
-        <div class="table">
-          <table>
-            <th>yrdrdyrsy</th> 
-            <Th> rugnhnthn  </Th>
-            <td>tdftrdtesr</td>
-            <tr>3</tr>
-            <tr>5</tr>
-          </table>
-        </div>
+        <div class="sub-sec-2"><p class="Overview-p">Top Rental Goods</p> <button class="sec-2-btn" onclick="openPopup()">Add Product</button></div>
+          
+        `<div class="popup-div" id="popup">
+            <div class="popup">
+              <img src="./pages img/dashboard/cart icon.svg" alt="😎">
+              <button onclick="closePopup()" type="button">ok </button>
+            <h2>Add an items</h2>
+            <p></p>
+          </div>
+          </div>
+          
       </section>
 
     </main>
+    <script src="./dashboard.js"></script>
+    <script>
+
+
+      </script>
 </body>
 </html>

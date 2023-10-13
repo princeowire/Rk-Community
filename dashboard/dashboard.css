@@ -26,7 +26,8 @@ button {
 
 .dashboard-body {
     background-color: #F4F7FC;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
 
 .tp-blue {
@@ -86,6 +87,7 @@ button {
 main {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -189,4 +191,25 @@ main {
     background-color: #cbf0ff;
     border: none;
     color: #1c75bc;
+}
+
+.popup-div {
+    background-color: #fff;
+    position: absolute;
+    left: 50;
+    top: 0;
+    transform: translate(-50,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    /* backdrop-filter: blur(10000px); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1111111;
+}
+
+.open-popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50,-50%) scale(0.1);
 }
